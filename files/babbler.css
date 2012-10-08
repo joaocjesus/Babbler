@@ -1,0 +1,79 @@
+body {
+	background-color: #cfc;
+}
+
+li {
+	list-style: none;
+	cursor: default;
+}
+
+li:hover {
+	background-color: #ffffdd;
+}
+
+li.user {
+	font-weight: bold;
+}
+
+.selected, li.selected:hover {
+	background-color: #228822;
+	color: white;
+}
+
+#main {
+	min-width: 600px;
+	height: 450px;
+}
+
+#users {
+	padding: 5px;
+	width: 140px;
+	background-color: #fff;
+	color: #333;
+	border: 1px solid gray;
+	height: 100%;
+	float: right;
+}
+
+#chat {
+	padding: 5px;
+	margin: 0;
+	height: 100%;
+	min-width: 400px;
+	border: 1px solid black;
+	overflow-y: scroll;
+	background-color: white;
+}
+
+#chat li .user {
+	color: green;
+}
+
+#command {
+	bottom: 0;
+}
+
+#prompt {
+	margin-top: 20px;
+	width: 85%;
+	min-width: 150px;
+	height: 30px;
+}
+
+#send {
+	height: 30px;
+}
+
+#panel {
+	height: 60px;
+	margin: 0 auto;
+	width: 98%;
+	top: 0;
+	padding: 10px;
+}
+
+#togglepanel {
+	position: absolute;
+	top: 0;
+	right: 20px;
+}
