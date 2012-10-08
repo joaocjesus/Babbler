@@ -5,7 +5,7 @@ $(document).ready(function() {
     $("#send").click(function() {
         checkSpaces($("#prompt"));
         if($("#prompt").prop("value") != '') {
-           var newline = "<li><span class='user'>[" + username + "]</span>: " + $("#prompt").prop("value") + "</li>";
+           var newline = "<li><span class='user'>[" + username + "]: </span>" + $("#prompt").prop("value") + "</li>";
            $("#chat").append(newline);
            $("#chat").scrollTop($("#chat").prop("scrollHeight"));
            $("#prompt").prop("value", "");
@@ -21,6 +21,7 @@ $(document).ready(function() {
         if($("#setuser").prop("value") != '') {
             username = $("#setuser").prop("value");
             $(".user").html(username);
+            $("#chat li .user").html("[" + username + "]:&nbsp;");
         }
     });
     $("#setuser").keypress(function(e) {
