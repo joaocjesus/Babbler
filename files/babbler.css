@@ -12,8 +12,13 @@ li:hover {
 	background-color: #ffffdd;
 }
 
-.user {
+.me {
 	font-weight: bold;
+	color: #070;
+}
+
+.user {
+	color: #7a7;
 }
 
 .selected, li.selected:hover {
@@ -86,5 +91,4 @@ li:hover {
 	position: absolute;
 	top: 0;
 	right: 5px;
-	height: 50px;
 }
